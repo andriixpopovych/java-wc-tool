@@ -5,6 +5,13 @@ public class WcDisplay {
         System.out.println(result + " " + filename);
     }
 
+    public void display(long[] result, String filename) {
+        for (long l : result) {
+            System.out.print(l + " ");
+        }
+        System.out.print(filename);
+    }
+
     public void displayHelpAttribute() {
         System.out.println("jwc [-optional] filename");
     }
